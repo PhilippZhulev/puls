@@ -9,7 +9,7 @@ module.exports = function(grunt) {
                     compress: false
                 },
                 files: {
-                    'src/css/style.css': ['src/components/*/*/*.styl', 'src/components/*/*.styl']
+                    'src/css/style.css': ['src/components/*/*.styl', 'src/components/*/*/*.styl']
                 }
             }
         },
@@ -45,13 +45,14 @@ module.exports = function(grunt) {
         imagemin: {
             dynamic: {
                 options: {
-                    optimizationLevel: 7
+                    optimizationLevel: 3
                 },
                 files: [{
                     expand: true,
                     cwd: 'src/components/',
                     src: ['**/*.{png,jpg,gif}'],
-                    dest: 'public/img/'
+                    dest: 'public/img/',
+                    dest: 'src/components/'
                 }]
             }
         },
