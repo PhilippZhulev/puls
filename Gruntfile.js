@@ -6,7 +6,9 @@ module.exports = function(grunt) {
         stylus: {
             compile: {
                 options: {
-                    compress: false
+                    compress: false,
+                    paths: ['src'],
+                    import : ['/nib/options.styl']
                 },
                 files: {
                     'src/css/style.css': ['src/components/*/*.styl', 'src/components/*/*/*.styl']
@@ -20,6 +22,11 @@ module.exports = function(grunt) {
             my_target: {
                 files: {
                     'public/js/scripts.min.js': ['src/components/*/*/*.js', 'src/components/*/*.js']
+                }
+            },
+            my_target_1: {
+                files: {
+                    'public/js/plugins.min.js': ['src/plugins/*.js']
                 }
             },
             my_target_2: {

@@ -1,4 +1,5 @@
 
+
 .logo
     width 935px
     height 664px
@@ -6,4 +7,33 @@
     margin auto
     left 0
     right 0
-    background url('../img/1_layout-1/1_1_layout_1__logo/layout-1__logo.png') center no-repeat 
+    background url('../img/1_layout-1/1_1_layout_1__logo/layout-1__logo.png') center no-repeat
+    animation-name logo_animated-1
+    animation-duration 1400ms
+    animation-iteration-count: 1
+    animation-timing-function ease-out
+.logo.pulse-animate
+    animation-name logo_animated-2
+    animation-duration 3s
+    animation-iteration-count: infinite
+    animation-timing-function linear
+@keyframes logo_animated-1
+    0%
+        t-scale 1
+
+    50%
+        t-scale 1.8
+        opacity 1
+
+    100%
+        t-scale 1
+@keyframes logo_animated-2
+    0%
+        t-scale 1
+
+    50%
+        t-scale 1.05
+        opacity 1
+
+    100%
+        t-scale 1
