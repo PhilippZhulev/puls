@@ -1,20 +1,20 @@
 .layout-1
     position relative
     padding-top 5px
-    padding-bottom 30px
 .layout-1__bg-parallax
-    position fixed
+    position absolute
     width: 106%
     height 100%
     background url('../img/1_layout-1/layout_1__bg-parralax.jpg') center no-repeat;
     background-size cover
     top 0
-    animation-name bg-parallax__animated
-    animation-duration 15s
-    animation-iteration-count: infinite
-    animation-timing-function ease-in-out
-
-@keyframes bg-parallax__animated
+    -webkit-animation-name bg-parallax__animated
+    -webkit-animation-duration 15s
+    -webkit-animation-iteration-count: infinite
+    -webkit-animation-timing-function linear
+.mCSB_inside>.mCSB_container
+        margin-right: 0;
+@-webkit-keyframes bg-parallax__animated
     0%
         t-translateX 0
     50%

@@ -1,6 +1,7 @@
 .fixed-header
     position fixed
     z-index 999
+    width: 100%;
 .sandwich__wrapper
     position relative
     &.active
@@ -81,3 +82,17 @@
             white-space nowrap
             font-size 18px
             text-decoration none
+@media all and (max-width 1200px)
+    .sandwich__menu
+         width 0
+         height auto
+    .sandwich__wrapper.active
+        .sandwich__menu
+            width 100%
+
+    .sandwich__menu__nav
+        white-space: normal;
+        >li
+            transform-origin: left;
+            padding: 15px 0;
+            display block
