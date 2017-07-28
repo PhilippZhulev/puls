@@ -20,9 +20,34 @@
     <body>
         <main>
             <header class="fixed-header">
-                <div class="sandwich"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col xs-12">
+                            <div class="sandwich__wrapper">
+                                <div class="sandwich">
+                                    <div class="sandwich__item-1"></div>
+                                    <div class="sandwich__item-2"></div>
+                                    <div class="sandwich__item-3"></div>
+                                </div>
+                                <div class="sandwich__menu">
+                                    <ul class="sandwich__menu__nav">
+                                        <li class="active">
+                                            <a href="#leyout_1">На главную</a>
+                                        </li>
+                                        <li>
+                                            <a href="#leyout_2">Пользовательское приложение</a>
+                                        </li>
+                                        <li>
+                                            <a href="#leyout_3">Организаторам событий</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </header>
-            <section class="layout-1">
+            <section class="layout-1" id="leyout_1" data-mcs-theme="dark">
                 <div class="layout-1__bg-parallax"></div>
                 <div class="logo"></div>
                 <div class="title">
@@ -84,7 +109,7 @@
                     <span>Проект создан и развивается при поддержке правительства Московской области</span>
                 </a>
             </section>
-            <section class="layout-2">
+            <section class="layout-2" id="leyout_2" data-mcs-theme="dark">
                 <div class="layout-2__blur-bg">
                     <div class="layout-2__bg-circle-1"></div>
                     <div class="layout-2__bg-circle-2"></div>
@@ -196,7 +221,7 @@
                     </div>
                 </div>
             </section>
-            <section class="layout-3">
+            <section class="layout-3" id="leyout_3" data-mcs-theme="dark">
                 <div class="container">
                     <div class="logo_inner">
                         <div class="logo_inner__title">
