@@ -2,7 +2,11 @@
     text-align center
     position relative
     width 230px
-    margin 80px auto 0 auto
+    margin 100px auto 0 auto
+    opacity 1
+    animate 1000 ease-in-out
+    &.loading
+        opacity 0
     span
         font-size 20px
     ul
@@ -12,3 +16,40 @@
         li
             display inline-block
             margin 0 4px
+            path
+                animate 300 ease-in-out
+.shareit
+    li
+        &:nth-child(1):hover
+            path
+                fill #3b5998
+        &:nth-child(2):hover
+            path
+                fill #ee8208
+        &:nth-child(3):hover
+            path
+                fill #1da1f2
+        &:nth-child(4):hover
+            path
+                fill #507299
+.shareit_layout_2
+    padding 2px
+    width 428px
+    margin 102px 0 0 76px
+    span
+        font-size 20px
+        display inline-block
+        margin-top 13px
+    ul
+        float right
+.shareit_layout_3
+    padding 2px
+    width 418px
+    margin 0 0 0 0
+    span
+        font-size 20px
+        display inline-block
+        margin-top 13px
+        float left
+    ul
+        float right

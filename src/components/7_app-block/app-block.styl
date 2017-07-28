@@ -3,6 +3,10 @@
     position relative
     margin 0 auto
     height 80px
+    opacity 1
+    animate 1000 ease-in-out
+    &.loading
+        opacity 0
 
 .app-block__item-1,
 .app-block__item-2
@@ -12,6 +16,10 @@
     background #000
     border-radius 4px
     border-bottom 5px solid #d0021b
+    animate 200 ease-in-out
+    &:hover
+        border-bottom 1px solid #d0021b
+        opacity 0.8
 
 .app-block__item-1
     float left
@@ -19,3 +27,14 @@
 .app-block__item-2
     float right
     background #000 url("../img/7_app-block/app-block__App_Store.png") center no-repeat
+
+.app-block__layout_2
+    width: 640px;
+    float: right;
+    .app-block__item-1, .app-block__item-2
+        width 278px
+.app-block__layout_3
+    width: 640px;
+    margin 33px 0 0 0
+    .app-block__item-1, .app-block__item-2
+        width 278px

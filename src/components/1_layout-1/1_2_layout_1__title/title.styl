@@ -1,20 +1,33 @@
 .title
     width 765px
-    margin 371px auto 65px auto
+    margin 360px auto 80px auto
 .title__big-text
     text-align center
     position relative
+    opacity 1
+    t-translateY 0
+    animate 1000 ease-in-out
     > h1
         font-size 80px
         font-weight 800
         letter-spacing 15px
         line-height 80px
         margin-top 0
+    &.loading
+        opacity 0
+        t-translateY 100px
+
 .title__light-text
     text-align center
     position relative
+    opacity 1
+    animate 800 ease-in-out
+    t-translateY 0
     > p
         font-weight 200
         font-size 30px
         color #000
         margin-top -30px
+    &.loading
+        opacity 0
+        t-translateY 80px

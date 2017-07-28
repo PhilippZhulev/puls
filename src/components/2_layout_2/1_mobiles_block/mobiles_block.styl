@@ -1,0 +1,30 @@
+.mobile-block
+    width 640px
+    height 590px
+    position relative
+    margin-left: 94px;
+    -webkit-perspective 6964px
+    transform-origin right top
+    -webkit-transform-style preserve-3d
+    transform-style preserve-3d
+    will-change transform
+    .mobile-block__mobile-1
+        position absolute
+        transform rotateY(48deg)
+        left 0
+        width 277px
+        height 563px
+        animate 300 ease-in-out
+        background url('../img/2_layout_2/1_mobiles_block/mobile_block-smart-1.png') center no-repeat
+    .mobile-block__mobile-2
+        position absolute
+        right 0
+        transform rotateY(-48deg)
+        width 277px
+        height 558px
+        animate 300 ease-in-out
+        background url('../img/2_layout_2/1_mobiles_block/mobile_block-smart-2.png') center no-repeat
+    &._scroll-event
+            .mobile-block__mobile-1
+            .mobile-block__mobile-2
+                transform rotateY(0deg)

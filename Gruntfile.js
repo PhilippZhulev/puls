@@ -47,19 +47,24 @@ module.exports = function(grunt) {
                     dest: 'public/css',
                     ext: '.min.css'
                 }]
+            },
+            target_2: {
+                files: {
+                  'public/css/plugins.min.css': 'src/plugins/*.css'
+                }
             }
         },
         imagemin: {
             dynamic: {
                 options: {
-                    optimizationLevel: 3
+                    optimizationLevel: 3,
+                    svgoPlugins: [{removeViewBox: false}]
                 },
                 files: [{
                     expand: true,
                     cwd: 'src/components/',
                     src: ['**/*.{png,jpg,gif}'],
-                    dest: 'public/img/',
-                    dest: 'src/components/'
+                    dest: 'public/img/'
                 }]
             }
         },
@@ -73,7 +78,7 @@ module.exports = function(grunt) {
             // tasks: ['cssmin', 'uglify', 'imagemin', 'browserSync']
             //no stylus watcher
             files: ['src/components/*/*/*.js', 'src/components/*/*/*.styl', 'src/components/*/*.js', 'src/components/*/*.styl', 'public/*.html'],
-            tasks: ['stylus', 'cssmin', 'uglify', 'imagemin', 'browserSync']
+            tasks: ['stylus', 'cssmin', 'uglify', 'browserSync']
         },
         browserSync: {
             bsFiles: {
@@ -99,6 +104,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-browser-sync');
 
     // Default task(s).
-    grunt.registerTask('default', ['uglify', 'cssmin', 'imagemin', 'browserSync', 'watch']);
+    grunt.registerTask('default', ['uglify', 'cssmin', 'browserSync', 'watch']);
 
 };

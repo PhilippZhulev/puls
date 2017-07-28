@@ -9,22 +9,22 @@
     right 0
     background url('../img/1_layout-1/1_1_layout_1__logo/layout-1__logo.png') center no-repeat
     animation-name logo_animated-1
-    animation-duration 1400ms
+    animation-duration 1500ms
     animation-iteration-count: 1
     animation-timing-function ease-out
 .logo.pulse-animate
     animation-name logo_animated-2
-    animation-duration 3s
+    animation-duration 2s
     animation-iteration-count: infinite
-    animation-timing-function linear
+    animation-timing-function ease-out
 @keyframes logo_animated-1
     0%
-        t-scale 1
+        t-scale 0
+        opacity 0
 
     50%
         t-scale 1.8
         opacity 1
-
     100%
         t-scale 1
 @keyframes logo_animated-2
