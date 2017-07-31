@@ -17,7 +17,7 @@
           > li
                 &:before
                   counter-increment item
-                  content counter(item) ". "
+                  content: counters(item,".") ". ";
                   font-weight bold
     &:before
         content ''

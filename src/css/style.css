@@ -1948,7 +1948,7 @@ section.layout-3 {
 }
 .scroll_block ol > li:before {
   counter-increment: item;
-  content: counter(item) ". ";
+  content: counters(item, ".") ". ";
   font-weight: bold;
 }
 .scroll_block:before {
