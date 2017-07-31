@@ -1926,6 +1926,31 @@ section.layout-3 {
   width: 100%;
   position: relative;
 }
+.scroll_block h3 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.scroll_block ol,
+.scroll_block ul {
+  padding: 0;
+  list-style-position: inside;
+}
+.scroll_block ol > li,
+.scroll_block ul > li {
+  line-height: 30px;
+  font-weight: 200;
+  font-size: 18px;
+}
+.scroll_block ol {
+  counter-reset: item;
+  list-style-type: none;
+}
+.scroll_block ol > li:before {
+  counter-increment: item;
+  content: counter(item) ". ";
+  font-weight: bold;
+}
 .scroll_block:before {
   content: '';
   width: 100%;
