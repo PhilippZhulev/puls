@@ -1309,7 +1309,7 @@ section.layout-3 {
 .shareit_layout_2 {
   padding: 2px;
   width: 428px;
-  margin: 102px 0 0 76px;
+  margin: 102px 0 0 6%;
 }
 .shareit_layout_2 span {
   font-size: 20px;
@@ -1371,7 +1371,7 @@ section.layout-3 {
   transform: rotate(-45deg) translate(13px, -13px);
 }
 .sandwich__wrapper.active .sandwich__menu {
-  width: 850px;
+  width: 940px;
   visibility: visible;
   opacity: 1;
 }
