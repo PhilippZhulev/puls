@@ -7,6 +7,9 @@
     animate 1000 ease-in-out
     &.loading
         opacity 0
+    >
+    .clear-fix
+        height 558px
 
 .app-block__item-1,
 .app-block__item-2
@@ -29,7 +32,7 @@
     background #000 url("../img/7_app-block/app-block__App_Store.png") center no-repeat
 
 .app-block__layout_2
-    width: 640px;
+    width: 100%;
     float: right;
     .app-block__item-1, .app-block__item-2
         width 278px
@@ -46,3 +49,13 @@
         max-width 675px
         min-width 575px
         float left
+@media all and (max-width 980px)
+    .app-block__layout-1
+        height auto
+        width 100%
+        .app-block__item-1,
+        .app-block__item-2
+            float none
+            margin 0 auto
+        .app-block__item-1
+            margin-bottom 20px
