@@ -1984,6 +1984,7 @@ section.layout-3 {
   .scroll_block {
     height: auto;
     width: 100%;
+    max-height: 1080px;
   }
   .scroll_block:before {
     content: '';
