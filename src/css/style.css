@@ -1032,6 +1032,12 @@ section.layout-3 {
     -o-transform: translateX(0);
   }
 }
+@media all and (max-width: 980px) {
+  .layout-1__bg-parallax {
+    position: absolute;
+    width: 110%;
+  }
+}
 
 .layout-2__blur-bg {
   background: url("../img/2_layout_2/layer_2_bg-blur.png") center no-repeat;
